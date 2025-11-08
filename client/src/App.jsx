@@ -5,7 +5,8 @@ function App() {
   const [message, setMessage] = useState("")
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/message")
+    // fetch("http://localhost:4000/api/message")
+    fetch("http://34.126.208.71:4000/api/message")
     // fetch("/api/message")  --> for proxy server
     .then((res) => res.json())
     .then((data) => setMessage(data.message))
